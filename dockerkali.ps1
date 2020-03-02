@@ -8,10 +8,5 @@ apt update
 apt dist-upgrade
 apt autoremove
 apt clean
-####after housecleaning, now we can create a local docker image 
-exit
-docker ps -a 
-#now we need to copy the container ID as we will use it in the next command
-docker commit CONTAINER_ID lucious_kali
-##################Docker persistance
-#if you want 
+####after updating we can now install any specific kali tools needed. 
+apt install kali-linux-top10
